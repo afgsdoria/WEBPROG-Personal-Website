@@ -1,11 +1,134 @@
 body {
-    background-color: lightblue;
+  background-color: #2a2a2a;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+#profile {
+  width: 320px;
+  height: 280px;
+  border-radius: 7px;
+  margin-right: 20px;
+  margin-left: 160px;
+  position: sticky;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+#fullname {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+#hi, #course {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 10px;
+  padding-right: 17%;
+  color: white;
+}
+#course {
+  margin-top: 40px;
+  line-height: 25px;
+  letter-spacing: 0.40px;
+}
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: flex-start;
   }
-  h1 {
-    color: white;
-    text-align: center;
+
+  .text-container {
+      align-items: flex-start;
   }
-  p {
-    font-family: verdana;
-    font-size: 20px;
+
+  #fullname {
+      font-size: 48px;
   }
+
+  #hi, #course {
+      font-size: 20px;
+  }
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  word-wrap: break-word;
+}
+ul {
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 0.40px;
+  word-wrap: break-word;
+}
+.links {
+  text-decoration: none;
+  color: #139873;
+}
+
+
+#edu, #achi, #exp, #goaldream, #hobint, #picture {
+  width: 90%;
+  max-width: 1120px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 1px #139873 solid;
+  padding: 20px;
+}
+#edu p, #goaldream p {
+  color: white;
+  font-size: 16px;
+  font-weight: 100px;
+  word-wrap: break-word;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.40px;
+}
+th, td {
+  text-align: left;
+  border: 2px #139873 solid;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+#images {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex;
+  gap: 17px;
+}
+#picture img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #images {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #picture img {
+      margin-bottom: 10px;
+  }
+}
