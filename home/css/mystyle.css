@@ -179,6 +179,7 @@ tr, td{
     align-items: flex-end; 
     gap: 17px; 
     display: inline-flex;
+    margin: 7px;
 }
 #picture img {
     width: 200px;
