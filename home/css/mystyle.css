@@ -67,6 +67,10 @@ ul {
     letter-spacing: 0.40px;
     word-wrap: break-word;
 }
+.links {
+  text-decoration: none;
+  color: #139873;
+}
 
 #edu{
     width: 1120px; 
