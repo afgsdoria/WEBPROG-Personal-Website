@@ -1,0 +1,128 @@
+body {
+    background-color: #2a2a2a;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    border: #139873;
+}
+
+.profile_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 850px;
+}
+
+#profile {
+    width: 320px;
+    height: 280px;
+    border-radius: 2%;
+    margin-right: 20px;
+}
+
+#fullname {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+#hi, #course {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: justify;
+    letter-spacing: 0.40px;
+    margin: 10px 0;
+}
+
+#edu, #achi, #exp, #goaldream, #hobint, #picture {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 850px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+}
+
+ul, p {
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+}
+
+.links {
+    text-decoration: none;
+    color: #139873;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 14px;
+}
+
+th, td {
+    text-align: left;
+    border: 2px #139873 solid;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 17px;
+    flex-wrap: wrap;
+}
+
+#picture img {
+    width: 270px;
+    height: 160px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'
+    'menu hobbies hobbies hobbies hobbies hobbies'
+    'menu gallery gallery gallery gallery gallery';
+  gap: 10px;
+  background-color: #139873;
+  padding: 10px;
+  margin: 5px;
+}
+
+.grid-container > div {
+  background-color: #2a2a2a;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
