@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atasha's Website-Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/contact.css?version=0.1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+</head>
+<body>
+    <div class="navbar">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <span class="navbar-brand mb-0 h1"></span>
+              <a href="index.html" class="education-icons" data-tooltip="HOME">
+                <span class="material-symbols-outlined" style="font-size: 30px;">home</span>
+              </a>
+              
+              <a href="education.html" class="education-icons" data-tooltip="I, AS A STUDENT...">
+                <span class="material-symbols-outlined" style="font-size: 30px;">school</span>
+              </a>
+              
+              <a href="favorite.html" class="favorite-icons" data-tooltip="LET'S UNLOCK...">
+                <span class="material-symbols-outlined" style="font-size: 30px;">favorite</span>
+              </a>
+              
+              <a href="references.html" class="search-icons" data-tooltip="SOURCES">
+                <span class="material-symbols-outlined" style="font-size: 30px;">search</span>
+              </a>
+            </div>
+          </nav>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item-title">
+            <h1>CONNECT</h1>
+            <p>Hi! On this page, you will find ways to connect with me and I'd love to hear your thoughts and suggestions for my website below. Feel free to get in touch with me!</p>
+        </div>
+
+        <div data-layer="Line 1" class="Line1"></div>
+
+        <br>
+        
+        <div class="flex-item-socials">
+            <h6>SOCIALS</h6>
+            <ul>
+              <li>Email: asdoria@student.apc.edu.ph</li>
+              <li>LinkedIn: Atasha Frances Gayle Doria<a href="https://www.linkedin.com/in/atasha-frances-gayle-doria-897399219/">Link</a></li> 
+            </ul>
+        </div>
+
+        <br>
+
+        <div data-layer="Line 1" class="Line1"></div>
+
+        <br>
+        <h6>SHARE YOUR THOUGHTS</h6>
+<div class="flex-item-survey">
+    <div id="app">
+      <input type="text" v-model="inpName" placeholder="Name">
+      <input type="text" v-model="inpSuggestion" placeholder="Suggestion*">
+      <button @click="submitSuggestion">Submit</button>
+
+      <ul>
+          <li v-for="(suggestion, index) in suggestions" :key="index">
+              {{ suggestion.name }}: {{ suggestion.text }}
+          </li>
+      </ul>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.45/dist/vue.global.js"></script> 
+  <script src="js/contact.js"></script>
+
+      </div>
+      </div>
+
+</body>
+</html>
